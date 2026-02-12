@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# update
+sudo apt-get update && sudo apt-get upgrade -y
+
 # While 2.0 is not stable
 python -m pip install jupyter-book --pre
 
