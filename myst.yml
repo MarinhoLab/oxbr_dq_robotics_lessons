@@ -5,7 +5,7 @@ project:
   id: f420092a-e58c-429b-aca2-fb33c47059c7
   jupyter: true # https://mystmd.org/guide/integrating-jupyter
   title: "OXBR"
-  github: https://github.com/MarinhoLab/OpenExecutableBooksRobotics
+  github: https://github.com/MarinhoLab/oxbr_dq_robotics_lessons
   math:
     '\myvec': '\mathbf{\boldsymbol{ #1 }}'
     '\mymatrix': '\mathbf{\boldsymbol{ #1 }}'
