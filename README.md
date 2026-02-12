@@ -1,71 +1,25 @@
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa] [![Jupyter Book](https://github.com/MarinhoLab/OpenExecutableBooksRobotics/actions/workflows/notebook_to_html.yml/badge.svg)](https://github.com/MarinhoLab/OpenExecutableBooksRobotics/actions/workflows/notebook_to_html.yml) 
+# Kinematic modeling and control of serial-link robotic manipulators using `dqrobotics` Python: From zero to hero.
 
-```{image} TAB_allwhite.png
-:class: hidden dark:block
-:width: 30%
-:align: center
-```
+This executable book contains eight lessons representing serial-link manipulator modeling in dual quaternions using `dqrobobotics` described in http://doi.org/10.1109/MRA.2020.2997920. It is a derivative
+work of a [`dqrobotics` MATLAB course](https://github.com/dqrobotics/learning-dqrobotics-in-matlab/tree/master/robotic_manipulators) from Murilo M. Marinho.
 
-```{image} TAB_black.png
-:class: dark:hidden
-:width: 30%
-:align: center
-```
+The theory used in this book is described in works such as [@adorno:tel-00641678], [@vilhenaadorno:hal-01478225], and https://doi.org/10.1109/TRO.2019.2920078.
 
-# Open Executable Books in Robotics
+# Using this book
 
-## Showing your love
+Each lesson is a [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html). Each lesson can be
+downloaded, opened, and executed with popular IDEs, such as [VSCode](https://code.visualstudio.com) and [PyCharm](https://www.jetbrains.com/pycharm/).
+The reader is expected to follow it sequentially.
 
-⭐ If this work is useful to you,
-please leave a star in the [GitHub repository](https://github.com/MarinhoLab/OpenExecutableBooksRobotics).
+# Contents
 
-## Citation
-
-> [!IMPORTANT]
-> Please cite the [primary sources](https://en.wikipedia.org/wiki/Primary_source) for any technical aspects being cited.
-
-> [!NOTE]
-> If and only if the citation is regarding aspects of the book itself, please cite as shown below.
-
-```bibtex
-@misc{marinho2025,
-author = {M. Marinho, Murilo},
-title = {Open Executable Books in Robotics},
-url = {https://marinholab.github.io/OpenExecutableBooksRobotics/},
-year = {2025}
-```
-
-📓 Presented at The University of Manchester's Open Research Conference 2025
-  -  Slides and abstract: https://doi.org/10.48420/29266976.v1
-
-```{iframe} https://www.youtube.com/embed/zmIsahJvmCI
-:width: 100%
-Presentation at the Open Research Conference 2025.
-```
-
-## Link for the website
-
-https://marinholab.github.io/OpenExecutableBooksRobotics/
-
-## License 
-
-This work is licensed under the
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
-
-## Funding
-
-| Duration        | Fund                                                                            | Funder                                                                      |
-|-----------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| Aug 24 - Jul 25 | [Open Research Fellowship](https://manchester-uk.libanswers.com/OOR/faq/279379) | [Office for Open Research (UoM)](https://www.openresearch.manchester.ac.uk) |
-
-The content shown in this work is based on my own expert knowledge (and interpretation of references) and not necessarily reflect the views of my funder(s). 
-
-## Contents
-
-- [The Basics of Kinematic Modeling and Control of Serial-link Manipulators Using `numpy`](basic_lessons/README.md).            
-- [Kinematic modeling and control of serial-link robotic manipulators using `dqrobotics`: From zero to hero.](dqrobotics/README.md).
-
-
-
-[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
-[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+| Number | Title and Link                                                | Content                                                                                                                                                                                                                                                      |
+|--------|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1      | [](lesson1/lesson_dq1_python_basics.ipynb)                    | The very basics of Python and `numpy`, including simple mathematical operations.                                                                                                                                                                             |
+| 2      | [](lesson2/lesson_dq2_quaternion_basics.ipynb)                | Representing and manipulating quaternions using `dqrobotics` Python. Unit quaternions are also introduced and used to represent the rotation of rigid bodies                                                                                                 |
+| 3      | [](lesson3/lesson_dq3_dual_quaternion_basics_part1.ipynb)     | Representing and manipulating dual quaternions using `dqrobotics` Python. Unit dual quaternions are introduced and used to represent the pose transformation of rigid bodies.                                                                                |
+| 4      | [](lesson4/lesson_dq4_dual_quaternion_basics_part2.ipynb)     | Unit dual quaternions are used to represent lines and planes. Distance functions between points, lines, and planes are also introduced                                                                                                                       |
+| 5      | [](lesson5/lesson_dq5_robot_control_basics_part1.ipynb)       | The basics of the kinematic control of serial-link robotic manipulators. Forward kinematics model, inverse kinematics model, task-space velocity and position control using a 1-DoF planar robot.                                                            |
+| 6      | [](lesson6/lesson_dq6_robot_control_basics_part2.ipynb)       | Modeling serial robots using the Denavit-Hartenberg (DH) parameters; the forward kinematics model using the DH parameters; the pose, rotation, translation Jacobians; translation, rotation, and pose task-space controlers; all using a 3-DoF planar robot. |
+| 7      | [](lesson7/lesson_dq7_robot_control_basics_part3.ipynb)       | Understanding and handling task-space singularities with a 7-DoF planar robot.                                                                                                                                                                               |
+| 8      | [](lesson8/lesson_dq8_optimization_based_robot_control.ipynb) | Revisiting the topic of kinematic control using mathematical optimization formulation, implement joint-space and task-space constraints using quadratic programming.                                                                                         |
