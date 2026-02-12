@@ -44,6 +44,9 @@ class OneDofPlanarRobot():
     def translation_jacobian(self,theta1):
         """ Calculate the translation Jacobian of the 1-DoF planar
            robot. """
+
+        # In some operations, theta1 can be converted to a ndarray
+        theta1 if np.isscalar(theta1) else np.ndarray.item(theta1)
         
         j = self.l1_*(-i_*sin(theta1)+j_*cos(theta1))
         return vec3(j)
