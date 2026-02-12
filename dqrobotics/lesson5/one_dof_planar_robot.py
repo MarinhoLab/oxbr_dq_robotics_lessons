@@ -14,7 +14,7 @@ class OneDofPlanarRobot():
         """Calculate the FKM for the 1-DoF planar robot."""
 
         # In some operations, theta1 can be converted to a ndarray
-        theta1 if np.isscalar(theta1) else np.ndarray.item(theta1)
+        theta1 = theta1 if np.isscalar(theta1) else np.ndarray.item(theta1)
         
         # The rotation about the joint
         x_w_1 = cos(theta1/2.0) + k_*sin(theta1/2.0)
@@ -46,9 +46,9 @@ class OneDofPlanarRobot():
            robot. """
 
         # In some operations, theta1 can be converted to a ndarray
-        theta1 if np.isscalar(theta1) else np.ndarray.item(theta1)
+        theta1 = theta1 if np.isscalar(theta1) else np.ndarray.item(theta1)
         
-        j = self.l1_*(-i_*sin(theta1)+j_*cos(theta1))
+        j = self.l1_ * ( -i_ * sin(theta1) + j_ * cos(theta1) )
         return vec3(j)
     
     def plot(obj,theta1):
@@ -57,7 +57,7 @@ class OneDofPlanarRobot():
         """
         
         # Get the fkm
-        t_w_r = obj.fkm(theta1);
+        t_w_r = obj.fkm(theta1)
         
         # Plot
         plt.plot([0, t_w_r.q[1]],[0, t_w_r.q[2]],'r')

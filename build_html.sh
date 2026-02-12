@@ -4,6 +4,7 @@
 sudo apt-get update && sudo apt-get upgrade -y
 
 # requirements
+python --version
 python -m pip install -r requirements.txt
 
 # While 2.0 is not stable
