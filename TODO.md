@@ -9,6 +9,3 @@
 that properly shows the video but not the image.
 3. The latex macros in all lessons do not seem to render well in `jupyterlab`. It's not yet clear to me why.
 
-## Notes
-
-- `jupyterbook2` documentation is at https://next.jupyterbook.org.

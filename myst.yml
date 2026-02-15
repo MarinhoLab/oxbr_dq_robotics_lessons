@@ -4,7 +4,7 @@ version: 1
 project:
   id: f420092a-e58c-429b-aca2-fb33c47059c7
   jupyter: true # https://mystmd.org/guide/integrating-jupyter
-  title: "OXBR"
+  title: "OXBR: DQ Lessons"
   github: https://github.com/MarinhoLab/oxbr_dq_robotics_lessons
   math:
     '\myvec': '\mathbf{\boldsymbol{ #1 }}'
@@ -44,8 +44,8 @@ project:
 
 site:
   template: book-theme
-  title: OXBR Website
+  title: OXBR DQ Lessons
   options:
     logo: M3logo_black.png
     logo_dark: M3logo_white.svg
-    logo_text: "(Murilo's) OXBR"
+    logo_text: "(Murilo's) OXBR DQ Lessons"
